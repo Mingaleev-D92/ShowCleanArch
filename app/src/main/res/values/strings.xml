@@ -1,3 +1,4 @@
 <resources>
    <string name="app_name">ShowCleanArch</string>
+   <string name="connection_error_try_again_later">Сonnection error, try again later</string>
 </resources>

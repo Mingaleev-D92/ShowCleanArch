@@ -15,7 +15,7 @@ import javax.inject.Inject
 class ShowRepositoryImpl @Inject constructor(
     private val apiService: ApiService
 ) :ShowRepository{
- //  suspend fun fetchAllShow() = apiService.fetchAllShow(page = 1).tvShowsResult.map { it.mapToDomain() }
+
    override suspend fun fetchShowList(): List<TvShowModel> {
       return apiService.fetchAllShow(page = 1).tvShowsResult.map { it.mapToDomain() }
    }
