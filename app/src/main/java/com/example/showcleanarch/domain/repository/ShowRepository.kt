@@ -8,7 +8,7 @@ import com.example.showcleanarch.domain.model.TvShowModel
  */
 
 
-interface ShowRepository {
-
-   suspend fun fetchShowList():List<TvShowModel>
-}
+//interface ShowRepository {
+//
+//   suspend fun fetchShowList():List<TvShowModel>
+//}

@@ -17,7 +17,7 @@ data class TvShowDto(
     @SerializedName("permalink")
     val permalink: String,
     @SerializedName("start_date")
-    val startDate: String,
+    val startDate: String?,
     @SerializedName("status")
     val status: String
 )

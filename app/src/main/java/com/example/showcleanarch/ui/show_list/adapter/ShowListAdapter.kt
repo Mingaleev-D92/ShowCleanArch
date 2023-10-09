@@ -2,6 +2,8 @@ package com.example.showcleanarch.ui.show_list.adapter
 
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.paging.PagingData
+import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -18,9 +20,7 @@ import com.example.showcleanarch.ui.components.viewBinding
  */
 
 
-class ShowListAdapter : ListAdapter<TvShowModel, ShowListAdapter.MyListViewHolder>(
-    SimpleDiffCallback<TvShowModel>()
-) {
+class ShowListAdapter() : PagingDataAdapter<TvShowModel, ShowListAdapter.MyListViewHolder>(SimpleDiffCallback()) {
 
    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyListViewHolder =
        MyListViewHolder(

@@ -18,7 +18,7 @@ fun TvShowDto.mapToDomain(): TvShowModel {
        name = name,
        network = network,
        permalink = permalink,
-       startDate = startDate,
+       startDate = startDate?:"",
        status = status
    )
 }
